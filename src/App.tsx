@@ -7,6 +7,7 @@ import { OrdersView } from './pages/OrdersView';
 import { BatchesView } from './pages/BatchesView';
 import { Dashboard } from './pages/Dashboard';
 import { DisposalsView } from './pages/DisposalsView';
+import { StaffView } from './pages/StaffView';
 
 const MainLayout: React.FC = () => {
   const { isAuthenticated, isLoading } = useAuth();
@@ -33,6 +34,7 @@ const MainLayout: React.FC = () => {
         {currentTab === 'batches' && <BatchesView />}
         {currentTab === 'dashboard' && <Dashboard />}
         {currentTab === 'disposals' && <DisposalsView />}
+        {currentTab === 'staff' && <StaffView />}
       </main>
       <footer className="bg-white border-t border-slate-200 py-4 text-center text-xs text-slate-500">
         &copy; 2026 ExpiryGuard - Vitthal Khemnar. All rights reserved.

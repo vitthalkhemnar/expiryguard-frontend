@@ -5,6 +5,8 @@ export interface User {
   username: string;
   fullName: string;
   role: Role;
+  active?: boolean;
+  createdAt?: string;
 }
 
 export interface AuthResponse {
